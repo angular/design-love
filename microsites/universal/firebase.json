@@ -1,9 +1,0 @@
-{
-  "firebase": "universal-angular-io",
-  "public": "dist",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
-}

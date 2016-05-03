@@ -1,9 +1,0 @@
-{
-  "firebase": "material-angular-io",
-  "public": "dist",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
-}

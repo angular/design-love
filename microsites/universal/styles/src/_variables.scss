@@ -133,7 +133,7 @@ $main-primary: unquote("rgb(#{$palette-green-500})"); // This is your primary co
 $main-secondary: unquote("rgb(#{$palette-green-800})"); // This is the darker shade within the same palette
 $main-light: unquote("rgb(#{$palette-green-500})"); // This is the lighest shade within the same palette
 $main-neutral: unquote("rgb(#{$color-white})"); // This is a nutral color (white)
-$main-neutral-dark: unquote("rgb(#{$palette-grey-700})"); // This is a nutral color (grey)
+$main-primary-dark: unquote("rgb(#{$palette-green-900})"); // This is a the darket primary color
 
 /* ==========  Components  ========== */
 
@@ -288,7 +288,7 @@ $list-avatar-color: white !default;
 /* ==========  Item ========== */
 
 // Default Item Colors
-$default-item-text-color: unquote("rgba(#{$color-black}, 0.87)") !default;
+$default-item-text-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 $default-item-outline-color: unquote("rgb(#{$palette-grey-400})") !default;
 $default-item-hover-bg-color: unquote("rgb(#{$palette-grey-200})") !default;
 $default-item-focus-bg-color: unquote("rgb(#{$palette-grey-200})") !default;

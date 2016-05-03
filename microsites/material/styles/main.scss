@@ -28,7 +28,7 @@ html, body {
 }
 .mdl-demo .mdl-layout__header-row {
   padding-left: 15px;
-  overflow: scroll;
+  overflow: visible;
 }
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
   font-size: inherit;
@@ -223,4 +223,77 @@ html, body {
 }
 .center {
   text-align: center;
+}
+.site-logo {
+  margin-right: 7px;
+}
+.microsite-name {
+  font-size: 20px;
+  margin-right: 30px;
+  transform: translateY(3px);
+  display: inline-block;
+  font-weight: lighter;
+}
+.top-nav {
+  padding-right: 0;
+  position: relative;
+}
+.top-nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  label {
+    display: none;
+  }
+}
+.site-header {
+  z-index: 2;
+  position: relative;
+}
+
+/*
+This uses a CSS hack for now, but should be replaced with proper JS in the future.
+The way it currently works:
+- The `site menu` is a label that points to a hidden checkbox
+- The checkbox and the `:checked` pseudo-selector are used to target the open/closed states
+- This selector allows us to show/hide the navigation items based on click toggle
+
+TODO: Replace this with data-binding when Angular is included
+*/
+@media (max-width: 800px) {
+  .top-nav-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    label {
+      display: block;
+      line-height: 56px;
+      padding: 0 16px;
+      float: right;
+      cursor: pointer;
+    }
+    nav {
+      clear: both;
+      display: none;
+      background: #002B95;
+      height: auto !important;
+      a {
+        display: block;
+      }
+    }
+    .mdl-layout-spacer {
+      display: none;
+    }
+  }
+  input:checked + .top-nav-wrapper {
+    label {
+      background: #002B95;
+    }
+
+    nav {
+      display: block;
+    }
+  }
 }

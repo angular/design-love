@@ -711,7 +711,6 @@
       margin-top: 10px;
       color: #37474F;
       margin: 0 0 16px 0;
-      font-weight: 400;
       opacity: .87;
       line-height: 32px;
       font-weight: 500;
@@ -723,6 +722,43 @@
       font-weight: 400;
       opacity: .87;
       line-height: 30px;
+    }
+  }
+
+  .code-block {
+    max-width: 920px;
+    padding: 6px 24px;
+    background: #f5f6f7;
+    border-left: 4px solid $main-primary;
+    border-radius: 4px;
+  }
+
+  .main-body {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 0 23px 0;
+    padding: 15px 200px 15px 15px;
+
+    & h5 {
+      font-size: 22px;
+      margin-top: 10px;
+      color: #37474F;
+      margin: 0 0 16px 0;
+      opacity: .87;
+      line-height: 32px;
+      font-weight: 500;
+    }
+
+    & p {
+      margin: 0 0 16px 0;
+      font-size: 14px;
+      font-weight: 400;
+      opacity: .87;
+      line-height: 30px;
+    }
+
+    & code {
+      color: #37474F;
     }
   }
 
@@ -752,6 +788,15 @@
       }
     }
   }
+
+.page-title {
+  margin-left: 15px;
+  text-align: left;
+}
+
+.power-text {
+  text-align: right;
+}
 
 @media (min-width: 0px) and (max-width: 830px) {
   .mdl-cell {
@@ -788,5 +833,27 @@
 
   .features-list {
     padding: 15px;
+  }
+
+  .main-body {
+    padding: 15px;
+  }
+
+  .power-text {
+    text-align: center;
+  }
+
+  .footer-links a {
+    text-align: center;
+  }
+
+  footer ul {
+    text-align: center;
+    width: 100%;
+
+    & li {
+      background-color: $default-item-text-color;
+      padding: 8px;
+    }
   }
 }
