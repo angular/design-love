@@ -753,6 +753,12 @@
       max-height: calc(200% / 3);
   }
 
+  footer ul li {
+    text-align: center;
+    background-color: rgba(0,0,0,.12);
+    padding: 8px;
+  }
+
   .reverse {
     display: flex !important;
     flex-direction: column-reverse !important;
