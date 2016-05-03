@@ -2,9 +2,18 @@
     <%- partial("_nav") %>
 
     <main class="mdl-layout__content">
-        <%- partial("_hero") %>
+        <%- partial("_hero", {
+            name: 'Angular Name',
+            tagline: 'Some catchy text about why you need to use this framework',
+            CTA: 'Get Started' }) %>
 
-        <%- partial("_features") %>
+        <%- partial("_features", {
+            feature1: {
+                name: 'Feature 1',
+                text: 'description of feature 1'
+            },
+            CTA: 'Get Started'
+        }) %>
 
         <div class="mdl-layout__header-row"></div>
 
