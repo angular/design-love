@@ -1,9 +1,0 @@
-{
-  "firebase": "test-microsite-cli",
-  "public": "www",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
-}
