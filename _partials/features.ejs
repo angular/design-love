@@ -1,16 +1,20 @@
-<section class="section--center mdl-grid mdl-grid--no-spacing">
+<section class="features-container section--center mdl-grid mdl-grid--no-spacing">
+    <% for(var i = 0; i < features.length; i++) {%>
     <div class="features-list">
-        <% for(var i = 0; i < features.length; i++) {%>
-        <div>
-            <h4><%- features[i].name %></h4>
-            <p><%- features[i].text %></p>
-        </div>
-        <% } %>
+        <h4><%- features[i].name %></h4>
+        <p><%- features[i].text %></p>
     </div>
+    <% } %>
 
-    <div class="mdl-cell mdl-cell--12-col-desktop center">
+    <div class="button-container mdl-cell mdl-cell--12-col-desktop center">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
             <a href="<%- CTA.url %>" class="mdl-typography--font-regular"><%- CTA.text %></a>
         </button>
     </div>
 </section>
+
+<style>
+    .button-container {
+        margin-bottom: 24px !important;
+    }
+</style>

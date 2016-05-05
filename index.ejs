@@ -1,22 +1,43 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
     <!-- Nav -->
-    <%- partial("_partials/nav", { name: 'NAME', logoWithText: '../images/angular-logo-with-text.svg'}) %>
+    <%- partial("_partials/nav", {
+        name: 'NAME',
+        logoWithText: '../images/angular-logo-with-text.svg',
+        CTA: {
+            text: 'Get Started',
+            url: '#'
+        },
+        pages: [],
+        homeHref: 'index.html'
+    }) %>
 
     <main class="mdl-layout__content">
         <!-- Hero -->
         <%- partial("_partials/hero", {
-            name: 'Angular Name',
-            tagline: 'Some catchy text about why you need to use this framework',
-            CTA: { text: 'Get Started', url: '#' }
+            name: 'NAME',
+            logo: {
+                src: '',
+                alt: ''
+            },
+            tagline: '',
+            CTA: {
+                text: 'Get Started',
+                url: '#'
+            }
         }) %>
 
         <!-- Add as many features as needed -->
         <%- partial("_partials/features", {
-            features: [{ name: 'Feature 1', text: 'description of feature 1' }],
-            CTA: { text: 'Get Started', url: '#' }
+            features: [{
+                name: 'Feature 1',
+                text: 'Feature 1 description.'
+            }],
+            CTA: {
+                text: 'Get Started',
+                url: 'http://angular.github.io/protractor/#/'
+            }
         }) %>
-
-        <div class="mdl-layout__header-row"></div>
 
         <!-- Footer -->
         <%- partial("_partials/footer", {
