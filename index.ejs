@@ -1,29 +1,26 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <!-- Nav -->
-    <%- partial("_nav", { name: 'NAME'}) %>
+    <%- partial("_partials/nav", { name: 'NAME', logoWithText: '../images/angular-logo-with-text.svg'}) %>
 
     <main class="mdl-layout__content">
         <!-- Hero -->
-        <%- partial("_hero", {
+        <%- partial("_partials/hero", {
             name: 'Angular Name',
             tagline: 'Some catchy text about why you need to use this framework',
-            CTA: {
-                text: 'Get Started',
-                url: '#'
-            }
-            }) %>
+            CTA: { text: 'Get Started', url: '#' }
+        }) %>
 
         <!-- Add as many features as needed -->
-        <%- partial("_features", {
+        <%- partial("_partials/features", {
             features: [{ name: 'Feature 1', text: 'description of feature 1' }],
-            CTA: {
-                text: 'Get Started',
-                url: '#'
-            }
+            CTA: { text: 'Get Started', url: '#' }
         }) %>
 
         <div class="mdl-layout__header-row"></div>
 
-        <%- partial("_footer") %>
+        <!-- Footer -->
+        <%- partial("_partials/footer", {
+            footerImg: '../images/angular-logo.svg'
+        }) %>
     </main>
 </div>
