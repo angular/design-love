@@ -6,9 +6,9 @@
         <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
             <h4 class="mt1"><%- name %></h4>
             <h5 class="mt1 mb3 mr0 tagline"><%- tagline %></h5>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
-                <a target="_blank" href='<%= CTA.href %>' class="mdl-typography--font-regular"><%- CTA.text %></a>
-            </button>
+            <a target="_blank" href='<%= CTA.href %>' class="mdl-typography--font-regular cta mdl-button mdl-button--raised mdl-button--primary">
+                <%- CTA.text %>
+            </a>
         </div>
     </section>
 </header>
