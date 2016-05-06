@@ -60,6 +60,14 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.code-block {
+  max-width: 920px;
+  padding: 6px 24px;
+  background: #f5f6f7;
+  border-left: 4px solid $main-primary;
+  border-radius: 4px;
+}
+
 // Utility classes for screen sizes.
 .mdl-layout.is-small-screen .mdl-layout--large-screen-only {
   display: none;
