@@ -54,6 +54,7 @@ fabric.properties
 # modules.xml
 
 
-
-wwww/
+node_modules/
+www/
 microsite-ui/
+.idea/
