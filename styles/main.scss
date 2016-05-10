@@ -1,12 +1,11 @@
-/* ==========  Theme Colors  ========== */
-// Main theme colors
-$primary-color: #2196F3; // This is your primary color theme
-$secondary-color: #1976D2; // This is the darker shade within the same palette
-$primary-light: #BBDEFB; // This is the lighest shade within the same palette
-$primary-dark: #0D47A1; // This is the darkest shade within the same palette
+/* ==========  DO NOT ALTER THIS FILE  ========== */
 
-$neutral-white: white; // This is a nutral color (white)
-$neutral-black: black; // This is a nutral color (black)
+@import "../node_modules/material-design-lite/src/variables";
+@import "theme.scss";
+
+/* ==========  Base Colors  ========== */
+$neutral-white: unquote("rgb(#{$color-white})"); // This is a nutral color (white)
+$neutral-black: unquote("rgb(#{$color-black})"); // This is a nutral color (black)
 
 // Main Variables
 $box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -14,6 +13,10 @@ $nav-transform: 3px;
 
 
 /* ==========  Main Styles  ========== */
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
 h4 {
   font-size: 30px;
   font-weight: 400;
@@ -177,17 +180,24 @@ h5 {
   //IMAGE
   .hero-container {
     padding: 56px 0 56px 0 !important;
+
+    @media (max-width: 840px) {
+      text-align: center;
+    }
   }
 
   .logo-container {
-    $logo-padding: 28px;
-
     overflow: hidden;
-    padding-right: $logo-padding;
+    text-align: center;
   }
 
-  //NAME
-  //TAGLINE
+  //TEXT
+  @media (max-width: 840px) {
+    .tagline {
+      max-width: 100%;
+    }
+  }
+
   //CTA BUTTON
   .mdl-button {
     $button-height: 45px;
@@ -266,54 +276,68 @@ h5 {
 
   .mdl-mega-footer--bottom-section,
   .mdl-mega-footer__bottom-section {
-    padding-top: 0;
     background-color: #263238;
-    color: white;
     bottom: 0;
+    color: white;
+    padding-top: 0;
     right: 0;
   }
   //LOGO
 
   //LINKS
   footer ul {
-    list-style: none;
-    padding: 0;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0;
+    line-height: 24px;
+    list-style: none;
+    padding: 0;
 
     a {
-      padding: 0;
-      font-size: 16px;
-      opacity: .87;
-      line-height: 28px;
-      text-decoration: none;
       color: white;
+      font-size: 16px;
+      line-height: 28px;
+      opacity: .87;
+      padding: 0;
+      text-decoration: none;
 
       &:hover {
         text-decoration: underline;
       }
     }
+
+    @media (max-width: 830px) {
+      $link-background-color: rgba(0, 0, 0, 0.12);
+      $link-padding: 8px;
+
+      background-color: $link-background-color;
+      padding: $link-padding;
+      text-align: center;
+    }
   }
 
   //CC
   .mdl-mega-footer--bottom-section p {
-    margin: 0;
     font-size: 12px;
+    margin: 0;
     opacity: .54;
   }
 
   .power-text {
     text-align: right;
+
+    @media (max-width: 830px) {
+      text-align: center;
+      width: calc(100% - 16px);
+    }
   }
 
   .mdl-mega-footer--bottom-section {
 
     & a {
+      color: white;
       font-weight: normal;
       padding: 0;
       text-decoration: none;
-      color: white;
     }
   }
