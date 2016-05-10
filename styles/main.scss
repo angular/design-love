@@ -176,6 +176,10 @@ h5 {
     margin-bottom: $hero-margin;
   }
 
+  .mdl-grid {
+    align-items: center;
+  }
+
   //IMAGE
   .hero-container {
     padding: 56px 0 56px 0 !important;
@@ -227,6 +231,10 @@ h5 {
     margin: 0 0 $features-margin 0;
     padding: $features-padding;
     padding-right: $features-padding-right;
+
+    @media (max-width: 840px) {
+      padding-right: 0;
+    }
   }
 
   //TITLE
