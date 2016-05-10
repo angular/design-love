@@ -36,6 +36,10 @@ h5 {
     max-width: 920px;
   }
 
+  .mdl-grid--no-spacing>.mdl-cell {
+    width: 100%;
+  }
+
 /* ==========  Top Navigation  ========== */
   //TOP NAV
   .mdl-layout__header {
@@ -170,33 +174,146 @@ h5 {
     margin-bottom: $hero-margin;
   }
 
+  //IMAGE
   .hero-container {
     padding: 56px 0 56px 0 !important;
   }
 
   .logo-container {
+    $logo-padding: 28px;
+
     overflow: hidden;
-    margin-bottom: 0 !important;
+    padding-right: $logo-padding;
   }
 
-  // .logo-container > img {
-  //   max-width: 400px;
-  //   padding-right: 48px;
-  //   text-align: end;
-  // }
-
-  //IMAGE
   //NAME
   //TAGLINE
   //CTA BUTTON
+  .mdl-button {
+    $button-height: 45px;
+    $button-line-height: $button-height;
+    $button-width: 140px;
+    $button-padding: 30px;
+
+    height: $button-height;
+    line-height: $button-line-height;
+    min-width: $button-width;
+    padding: 0 $button-padding;
+  }
+
+  .mdl-button--primary.mdl-button--primary.mdl-button--raised,
+  .mdl-button--primary.mdl-button--primary.mdl-button--fab {
+    background-color: $neutral-white;
+    color: $primary-dark;
+  }
 
 /* ==========  Feature Styles  ========== */
+  //CONTAINER
+  .features-list {
+    $features-margin: 23px;
+    $features-padding: 15px;
+    $features-padding-right: 200px;
+
+    width: 920px;
+    margin: 0 0 $features-margin 0;
+    padding: $features-padding;
+    padding-right: $features-padding-right;
+  }
+
   //TITLE
+  .features-list h4 {
+    color: #37474F;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 10px;
+    margin: 0 0 16px 0;
+    opacity: .87;
+  }
+
   //CONTENT
+  .features-list p {
+    font-size: 16px;
+    line-height: 30px;
+    opacity: .87;
+  }
 
 /* ==========  CTA Styles  ========== */
 
+  //BOTTOM  CTA
+  .button-container {
+    $button-margin: 24px;
+
+    margin-bottom: $button-margin !important;
+    text-align: center;
+  }
+
+  .mdl-button--accent.mdl-button--accent.mdl-button--raised,
+  .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    background-color: $primary-color;
+    color: $neutral-white;
+  }
+
+
 /* ==========  Footer Styles  ========== */
+  //CONTAINER
+
+  .mdl-mega-footer--bottom-section .mdl-cell--9-col{
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+  }
+
+  .mdl-mega-footer--bottom-section,
+  .mdl-mega-footer__bottom-section {
+    padding-top: 0;
+    background-color: #263238;
+    color: white;
+    bottom: 0;
+    right: 0;
+  }
   //LOGO
+
   //LINKS
+  footer ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+
+    a {
+      padding: 0;
+      font-size: 16px;
+      opacity: .87;
+      line-height: 28px;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   //CC
+  .mdl-mega-footer--bottom-section p {
+    margin: 0;
+    font-size: 12px;
+    opacity: .54;
+  }
+
+  .power-text {
+    text-align: right;
+  }
+
+  .mdl-mega-footer--bottom-section {
+
+    & a {
+      font-weight: normal;
+      padding: 0;
+      text-decoration: none;
+      color: white;
+    }
+  }
