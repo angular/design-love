@@ -8,19 +8,22 @@
             text: 'Get Started',
             url: '#'
         },
-        pages: [],
-        homeHref: 'index.html'
+        pages: [{
+          text: 'Level 2',
+          href: '#',
+        }],
+          homeHref: 'index.html'
     }) %>
 
     <main class="mdl-layout__content">
         <!-- Hero -->
         <%- partial("_partials/hero", {
-            name: 'NAME',
+            name: 'Name of Microsite',
             logo: {
                 src: '',
                 alt: ''
             },
-            tagline: '',
+            tagline: 'Here is a temporary tagline used for the microsite framework.',
             CTA: {
                 text: 'Get Started',
                 url: '#'

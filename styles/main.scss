@@ -1,0 +1,202 @@
+/* ==========  Theme Colors  ========== */
+// Main theme colors
+$primary-color: #2196F3; // This is your primary color theme
+$secondary-color: #1976D2; // This is the darker shade within the same palette
+$primary-light: #BBDEFB; // This is the lighest shade within the same palette
+$primary-dark: #0D47A1; // This is the darkest shade within the same palette
+
+$neutral-white: white; // This is a nutral color (white)
+$neutral-black: black; // This is a nutral color (black)
+
+// Main Variables
+$box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+$nav-transform: 3px;
+
+
+/* ==========  Main Styles  ========== */
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 16px;
+  margin-top: 24px;
+  max-width: 300px;
+}
+
+/* ==========  Body Styles  ========== */
+  .mdl-demo section.section--center {
+    max-width: 920px;
+  }
+
+/* ==========  Top Navigation  ========== */
+  //TOP NAV
+  .mdl-layout__header {
+    background-color: $primary-color;
+    box-shadow: $box-shadow;
+
+    a {
+      color: $neutral-white;
+      text-decoration: none;
+    }
+  }
+
+  .mdl-layout__header-row {
+    $padding-left: 25px;
+
+    padding: 0;
+    padding-left: $padding-left;
+  }
+
+  //NAME
+  .mdl-layout__title, .mdl-layout-title {
+    $title-font-size: 16px;
+    $title-line-height: 28px;
+
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+    letter-spacing: 0.02em;
+  }
+
+  .microsite-name {
+    $name-font-size: 20px;
+    $margin-right: 30px;
+    $margin-left: 8px;
+
+    display: inline-block;
+    font-size: $name-font-size;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+    text-transform: uppercase;
+    transform: translateY($nav-transform);
+  }
+
+  //LINKS
+  .mdl-navigation__link {
+    $link-font-size: 16px;
+
+    font-size: $link-font-size;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  .top-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+
+    label {
+      display: none;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  // MENU MOBILE
+  /*
+  This uses a CSS hack for now, but should be replaced with proper JS in the future.
+  The way it currently works:
+  - The `site menu` is a label that points to a hidden checkbox
+  - The checkbox and the `:checked` pseudo-selector are used to target the open/closed states
+  - This selector allows us to show/hide the navigation items based on click toggle
+  TODO: Replace this with data-binding when Angular is included
+  */
+
+  @media (max-width: 800px) {
+    .top-nav-wrapper {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+
+      label {
+      $padding: 16px;
+
+        cursor: pointer;
+        display: block;
+        float: right;
+        line-height: 56px;
+        padding: 0 $padding;
+      }
+
+      nav {
+        background: $secondary-color;
+        clear: both;
+        display: none;
+        height: auto !important;
+
+        a {
+          display: block;
+        }
+      }
+
+      .mdl-layout-spacer {
+        display: none;
+      }
+    }
+
+    input:checked + .top-nav-wrapper {
+      label {
+        background: $secondary-color;
+      }
+
+      nav {
+        display: block;
+      }
+    }
+  }
+
+/* ==========  Hero Styles  ========== */
+  //BACKGROUND
+  .hero-background {
+    $hero-margin: 60px;
+
+    background: linear-gradient($secondary-color, $primary-color);
+    color: #fff;
+    margin-bottom: $hero-margin;
+  }
+
+  .hero-container {
+    padding: 56px 0 56px 0 !important;
+  }
+
+  .logo-container {
+    overflow: hidden;
+    margin-bottom: 0 !important;
+  }
+
+  // .logo-container > img {
+  //   max-width: 400px;
+  //   padding-right: 48px;
+  //   text-align: end;
+  // }
+
+  //IMAGE
+  //NAME
+  //TAGLINE
+  //CTA BUTTON
+
+/* ==========  Feature Styles  ========== */
+  //TITLE
+  //CONTENT
+
+/* ==========  CTA Styles  ========== */
+
+/* ==========  Footer Styles  ========== */
+  //LOGO
+  //LINKS
+  //CC
