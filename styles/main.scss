@@ -1,7 +1,6 @@
 /* ==========  DO NOT ALTER THIS FILE  ========== */
-
 @import "../node_modules/material-design-lite/src/variables";
-@import "theme.scss";
+@import "../../styles/theme.scss";
 
 /* ==========  Base Colors  ========== */
 $neutral-white: unquote("rgb(#{$color-white})"); // This is a nutral color (white)
