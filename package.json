@@ -1,0 +1,21 @@
+{
+  "name": "microsite-ui",
+  "version": "1.0.0",
+  "description": "A component library for stylizing angular microsites [WIP].",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericjim/microsite-ui.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericjim/microsite-ui/issues"
+  },
+  "homepage": "https://github.com/ericjim/microsite-ui#readme",
+  "dependencies": {
+    "material-design-lite": "^1.1.3"
+  }
+}

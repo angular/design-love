@@ -1,4 +1,4 @@
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<div class="mdl-layout mdl-js-layout">
 
     <!-- Nav -->
     <%- partial("_partials/nav", {
@@ -8,19 +8,22 @@
             text: 'Get Started',
             url: '#'
         },
-        pages: [],
-        homeHref: 'index.html'
+        pages: [{
+          text: 'Level 2',
+          href: '#',
+        }],
+          homeHref: 'index.html'
     }) %>
 
     <main class="mdl-layout__content">
         <!-- Hero -->
         <%- partial("_partials/hero", {
-            name: 'NAME',
+            name: 'Name of Microsite',
             logo: {
-                src: '',
+                src: 'images/logo.svg',
                 alt: ''
             },
-            tagline: '',
+            tagline: 'Here is a temporary tagline used for the microsite framework.',
             CTA: {
                 text: 'Get Started',
                 url: '#'
@@ -30,8 +33,14 @@
         <!-- Add as many features as needed -->
         <%- partial("_partials/features", {
             features: [{
-                name: 'Feature 1',
-                text: 'Feature 1 description.'
+              name: 'Feature 1',
+              text: 'Microsite feature description 1.'
+            }, {
+              name: 'Feature 2',
+              text: 'Microsite feature description 2.'
+            }, {
+              name: 'Feature 3',
+              text: 'Microsite feature description 3.'
             }],
             CTA: {
                 text: 'Get Started',
