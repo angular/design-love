@@ -324,10 +324,21 @@ h5 {
   }
 
   //CC
-  .mdl-mega-footer--bottom-section p {
-    font-size: 12px;
-    margin: 0;
-    opacity: .54;
+  .mdl-mega-footer--bottom-section {
+    margin-bottom: 0;
+
+    & p {
+      font-size: 12px;
+      margin: 0;
+      opacity: .54;
+    }
+
+    & a {
+      color: white;
+      font-weight: normal;
+      padding: 0;
+      text-decoration: none;
+    }
   }
 
   .power-text {
@@ -336,16 +347,6 @@ h5 {
     @media (max-width: 830px) {
       text-align: center;
       width: calc(100% - 16px);
-    }
-  }
-
-  .mdl-mega-footer--bottom-section {
-
-    & a {
-      color: white;
-      font-weight: normal;
-      padding: 0;
-      text-decoration: none;
     }
   }
 
