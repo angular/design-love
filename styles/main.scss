@@ -233,7 +233,7 @@ h5 {
     padding-right: $features-padding-right;
 
     @media (max-width: 840px) {
-      padding-right: 0;
+      padding-right: $features-padding;
     }
   }
 
