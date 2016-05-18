@@ -8,6 +8,10 @@ $secondary-color: unquote("rgb(#{$palette-blue-700})"); // This is the darker sh
 $primary-light: unquote("rgb(#{$palette-blue-100})"); // This is the lighest shade within the same palette
 $primary-dark: unquote("rgb(#{$palette-blue-900})"); // This is the darkest shade within the same palette
 
+/* ==========  Base Colors  ========== */
+$neutral-white: unquote("rgb(#{$color-white})"); // This is a nutral color (white)
+$neutral-black: unquote("rgb(#{$color-black})"); // This is a nutral color (black)
+
 /* ==========  CUSTOM THEME IMAGE  ========== */
 // Main Hero Image
 .hero-image {
