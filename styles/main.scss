@@ -1,7 +1,7 @@
 /* ==========  DO NOT ALTER THIS FILE  ========== */
-@import "../node_modules/material-design-lite/src/variables";
+@import "../../../node_modules/material-design-lite/src/variables";
 @import "sample-theme.scss";
-@import '../../styles/theme.scss';
+@import '../../../styles/theme.scss';
 
 // Main Variables
 $box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -377,4 +377,4 @@ h5 {
   }
 
 @import "sample-theme.scss";
-@import '../../styles/theme.scss';
+@import '../../../styles/theme.scss';
